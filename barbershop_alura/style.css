@@ -1,0 +1,314 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+nav {
+    position: absolute;
+    right: 50px;
+    top: 120px;
+}
+
+.logonav {
+    display: inline-block;
+    /*width: 25%;*/
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+    
+}
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;    
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+
+}
+
+/*produtos-mains*/
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%; 
+    padding: 30px 20px;
+    box-sizing: border-box;;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    /*border: 2px solid black; para fazer em uma linha so*/
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{
+    border-color: #088C19;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.prod-descr {
+    font-size: 18px;
+
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*contato-main*/
+/*main {
+    
+}*/
+
+form {
+    margin: 40px 15px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.check {
+    margin : 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table {
+    margin:  40px 15px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+/*Pagina inicial*/
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px ;
+    margin: 0 auto;
+}
+
+.tit-prin {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    clear: left;
+}
+
+.imgutensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p {
+    margin-bottom: 1em;
+}
+
+.principal p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0; 
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo {
+    width: 940px ;
+    margin: 0 auto;
+}
+.beneficios{
+    padding: 3em 0;
+    background: #888888 ;
+    
+}
+
+.content-beneficios {
+    width: 640 px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+/*.itens:nth-child(2n) {
+    font-weight: bold;
+} for even number */
+
+.itens:before{
+    content: "🟊";
+}
+.imgbeneficios {
+    width: 60%;
+    opacity: 89%;
+    transition: 400ms;
+}
+
+.imgbeneficios:hover {
+    opacity: 100%;
+    box-shadow: 10px 10px 5px #000 ;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px;
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .content-beneficios, .mapa-conteudo, .video {
+       width: auto;  
+    }
+
+    .logonav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios , .imgbeneficios{
+        width: 100%;
+    }
+    .produtos li{
+      width: 100%;  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .produtos{
+        width: auto;
+    }
+    .logonav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+    .produtos li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
